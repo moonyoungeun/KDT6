@@ -1,0 +1,63 @@
+body{
+    font-size: 16px;
+    position: relative;
+}
+
+
+a{
+    text-decoration: none;
+    color: purple;
+    height: 5px;
+}
+
+header .inner{
+    width: 1100px;
+    height: 120px;
+}
+
+header{
+    background-color: #f6f5ef ;
+    border-bottom: 1px solid #c8c8c8;
+    position: relative;
+}
+
+header .inner .header__logo{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 3px;
+    background-size: 5px;
+}
+
+
+header .inner .header__menu {
+    display: flex;
+    position: absolute;
+    left: 800px;
+    top: 0px;
+    bottom: 0;
+    margin: 5px;
+    height: 5px;}
+
+
+header .inner .header__menu li{
+    padding: 10px 15px;
+    font-size: 12px;
+    color: #656565;
+}   
+
+header .inner .header__menu li:hover{
+    padding: 12px;
+    font-size: 7px;
+    color: #000;
+}    
+
+header .inner .header__search i{
+    position:absolute;
+    right: 150px;
+    font-size: 16px;
+    color: hotpink;
+    top: 8px;
+    margin: auto;
+    height: 3px;
+}
