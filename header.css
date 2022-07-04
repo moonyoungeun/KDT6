@@ -1,6 +1,6 @@
 /*common*/
 body{
-    font-size: 16px;
+    font-size: 10px;
 }
 
 
@@ -19,7 +19,7 @@ header .inner {
     /* background-color: palegreen; */
     width: 1200px;
     height: 64px;
-    padding: 0 32px;
+    padding: 0 25px;
     margin: 0 auto;
     display: flex;
 }
@@ -47,7 +47,7 @@ header .inner .header__logo a i{
 header .inner .header__menu {
     display: flex;
     position: absolute;
-    left: 200px;
+    left: 150px;
     top: 0;
     bottom: 0;
     margin: auto;
