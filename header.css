@@ -1,0 +1,161 @@
+/*common*/
+body{
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+    color: purple;
+}
+
+header{
+    /* background-color: powderblue; */
+    border-bottom: 1px solid hotpink;
+}
+
+header .inner {
+    position: relative;
+    /* background-color: palegreen; */
+    width: 1200px;
+    height: 64px;
+    padding: 0 32px;
+    margin: 0 auto;
+    display: flex;
+}
+
+/*header logo*/
+header .inner .header__logo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 32px;
+}
+
+header .inner .header__logo a {
+    font-size: 32px;
+    color: hotpink;
+}
+
+header .inner .header__logo a i{
+    font-size: 32px;
+    color: hotpink;
+}
+
+/*header menu*/
+header .inner .header__menu {
+    display: flex;
+    position: absolute;
+    left: 200px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 25px;
+
+    /* 중앙정렬 하는 법
+    margin: auto;
+    left: 50%;
+    transform: translate(-50%,0); */
+}
+
+header .inner .header__menu li{
+    padding: 8px 16px;
+}
+
+header .inner .header__menu li a:hover{
+    color: hotpink;
+}
+
+header .inner .header__menu li a{}
+
+/*header search*/
+header .inner .header__search {
+    position: absolute;
+    right: 350px;
+    height: 25px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+} 
+
+header .inner .header__search input{
+    width: 148px;
+    height: 36px;
+    padding: 5px 9px;
+    box-sizing: border-box;
+    border: 5px solid transparent;
+    border-radius: 6px;
+}
+
+header .inner .header__search input:focus{
+    outline-color: whitesmoke;
+    background-color:hotpink;
+}
+
+header .inner .header__search input:hover{
+    border: 5px solid hotpink;
+
+}
+
+header .inner .header__search i{
+    position:absolute;
+    right: 9px;
+    font-size: 16px;
+    color: hotpink;
+    top: 8px;
+    margin: auto;
+    height: 3px;
+}
+
+
+/*header_participation*/
+header .inner .header__participation {
+    position:absolute;
+    right: 230px;
+    height: 8px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+header .inner .header__participation:hover{
+    color: hotpink;
+}
+
+header .inner .header__participation a:hover{
+    color: hotpink;
+}
+
+/*header_btn*/
+header .inner .header__btn{
+    display: flex;
+    position: absolute;
+    right: 0;
+    height: 34px;
+    top: 9px;
+    bottom: 0px;
+    margin: auto;
+}
+
+
+header .inner .hearder__btn__login{
+    padding: 8px;
+    margin-right: 8px;
+    box-sizing: border-box;
+    border: 2px solid hotpink;
+    border-radius: 8px;
+    color: purple;
+
+}
+
+header .inner .header__btn__register{
+    padding: 8px;
+    margin-right: 8px;
+    box-sizing: border-box;
+    border: 1px solid hotpink;
+    border-radius: 8px;
+    color: white;
+    background-color: hotpink;
+}
+
+
