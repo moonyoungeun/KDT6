@@ -1,3 +1,19 @@
+/* .material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+  font-size: 13px;
+  bottom: 0px;
+  margin: auto;
+  left: 64px;
+  top: 8px;
+
+  
+} */
+
+
 body{
     font-size: 14px;
     font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
@@ -52,14 +68,24 @@ header .inner .header__menu {
     
     
 header .inner .header__menu li{
-    padding: 8px 18px;
+    padding: 8px 25px;
     top: 0;
     bottom: 0;
+    margin-right: 12px;
+    box-sizing: border-box;
+    border-radius: 3px;
     }
     
-/* header .inner .header__menu li a:hover{
-    color: hotpink;
-    } */
+header .inner .header__menu li:hover{
+  
+    background-color: rgba(206, 205, 205, 0.593);
+    padding: 8px 25px;
+    margin-right: 12px;
+    box-sizing: border-box;
+    border-radius: 3px;
+
+
+    }
 
 
 header .inner .hearder__btn {
@@ -90,6 +116,7 @@ header .inner .header__btn__register{
     background-color: gray;
     opacity: 50%;
     display: flex; 
+    
     }
 
 
