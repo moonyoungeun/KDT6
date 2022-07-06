@@ -6,7 +6,7 @@ body{
 
 a{
     text-decoration: none;
-    color: purple;
+    color: rgb(93, 93, 93);
     height: 5px;
 }
 
@@ -23,41 +23,44 @@ header{
 
 header .inner .header__logo{
     position: absolute;
-    top: 0;
-    bottom: 0;
-    height: 3px;
     background-size: 5px;
+    padding: 20px;
+    left: 180px;
+    height: 75px ;
 }
 
 
 header .inner .header__menu {
     display: flex;
     position: absolute;
-    left: 800px;
+    left: 775px;
     top: 0px;
     bottom: 0;
-    margin: 5px;
-    height: 5px;}
+    margin: auto;
+}
 
 
 header .inner .header__menu li{
     padding: 10px 15px;
     font-size: 12px;
     color: #656565;
-}   
+} 
 
 header .inner .header__menu li:hover{
-    padding: 12px;
-    font-size: 7px;
+    padding: 10px 15px;
+    font-size: 12px;
     color: #000;
-}    
+
+}   
 
 header .inner .header__search i{
     position:absolute;
-    right: 150px;
+    right: 310px;
     font-size: 16px;
-    color: hotpink;
-    top: 8px;
+    color: black;
+    top: 9px;
     margin: auto;
     height: 3px;
+    border: 1px solid #000;
+    border-radius: 2px;
 }

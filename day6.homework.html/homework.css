@@ -90,6 +90,7 @@ header .inner .header__menu li:hover{
 
 header .inner .header__menu li:hover i{
     transform: rotate(180deg);
+    transition: .4s;
 }
 
 
