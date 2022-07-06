@@ -1,66 +1,98 @@
-body{
+/* COMMON */
+/* 폰트 사이즈 폰트 패밀리 기본 속성 */
+body {
+    color: #333;
     font-size: 16px;
-    position: relative;
-}
-
-
-a{
-    text-decoration: none;
-    color: rgb(93, 93, 93);
-    height: 5px;
-}
-
-header .inner{
+    font-weight: 400;
+    /* 배수값으로 하는게 정신건강에 좋다 */
+    line-height: 1.4;
+    font-family: "Nanum Gothic", sans-serif;
+  }
+  
+  /* HEADER */
+  header {
+    background-color: skyblue;
+  }
+  
+  header .inner {
+    background-color: orange;
     width: 1100px;
-    height: 120px;
-}
-
-header{
-    background-color: #f6f5ef ;
-    border-bottom: 1px solid #c8c8c8;
+    height: 100px;
+  
+    /* 중앙정렬 */
+    margin: 0 auto;
     position: relative;
-}
-
-header .inner .header__logo{
+  }
+  
+  header .inner .logo {
     position: absolute;
-    background-size: 5px;
-    padding: 20px;
-    left: 180px;
-    height: 75px ;
-}
-
-
-header .inner .header__menu {
-    display: flex;
-    position: absolute;
-    left: 775px;
-    top: 0px;
+    top: 0;
     bottom: 0;
     margin: auto;
-}
-
-
-header .inner .header__menu li{
+    height: 75px;
+    left: 0;
+  }
+  
+  header .inner .logo img {
+    display: block;
+  }
+  header .inner .sub_menu {
+    display: flex;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+  header .inner .sub_menu .menu {
+    display: flex;
+  }
+  
+  header .inner .sub_menu .menu li {
+  }
+  /* 가상요소 선택자 */
+  header .inner .sub_menu .menu li:not(:last-child)::after {
+    content: "ㅣ";
+    font-size: 12px;
+    color: #c8c8c8;
+  }
+  header .inner .sub_menu .menu li a {
     padding: 10px 15px;
     font-size: 12px;
     color: #656565;
-} 
-
-header .inner .header__menu li:hover{
-    padding: 10px 15px;
-    font-size: 12px;
-    color: #000;
-
-}   
-
-header .inner .header__search i{
-    position:absolute;
-    right: 310px;
+    text-decoration: none;
+  }
+  
+  header .inner .sub_menu .menu li a:hover {
+    text-decoration: underline;
+  }
+  header .inner .search {
+    position: relative;
+  }
+  
+  header .inner .search input {
+    width: 40px;
+    height: 34px;
+    /* width 만 트랜지션 주겠다 */
+    transition: width 0.4s;
     font-size: 16px;
-    color: black;
-    top: 9px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+  
+  header .inner .search input:focus {
+    width: 180px;
+    /* 아웃라인 색깔 변경 */
+    outline-color: green;
+  }
+  
+  header .inner .search span {
+    position: absolute;
+  
+    font-size: 24px;
+    height: 24px;
+    top: 0;
+    bottom: 0;
+    right: 3px;
     margin: auto;
-    height: 3px;
-    border: 1px solid #000;
-    border-radius: 2px;
-}
+  }
