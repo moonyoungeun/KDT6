@@ -1,60 +1,195 @@
-body{
-    font-size: 14px;
-    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
-   
-
-    
-}
-
-@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
-
+/* COMMON */
+/* 폰트 사이즈 폰트 패밀리 기본 속성 */
+body {
+    color: black;
+    background-color: #dacaff;
+    font-weight: 400;
+    /* 배수값으로 하는게 정신건강에 좋다 */
+    line-height: 1.4;
+    font-family: "Nanum Gothic", sans-serif;
+    height: 3000px;
+  }
 
 .inner{
-    
+  position: relative;
+  width: 1200px;
+  height: 80px;
+  margin: 0 auto;
+
+
+}
   
+  /* HEADER */
+  header {
+    background-color: #dacaff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
   }
 
 
-header{
-    
 
-}
+  header:hover {
+    background-color: white;
+    transition: 0.4s;
 
-
-header .inner .header__logo img{
+  }
   
-}
+  header>.inner {
+    /* background-color: orange; */
+    /* 중앙정렬 */
+    margin: 0 auto;
+
+  }
+  
+  header .inner .logo {
+    position: absolute;
+    top: 15px;
+    height: 75px;
+    left: 0;
+  }
+  
+  header .inner .logo img {
+    display: block;
+  }
  
 
 
+
+
+
+
+    /* main menu */
+
 header .inner .main_menu{
-  
+    display: flex;
+    position: absolute;
+    right: 660px;
+    bottom: 30px;
+    margin-right: 40px;
+    font-size: 15px;
+
+    
 
 
 }
 
 
 
+header .inner .main_menu .item:hover{
+
+    Background-color: rgba(170, 162, 162, 0.475);
+    Color: black;
+    cursor: pointer;
+    border-radius: 6px;
+
+
+
+}
 
 
 header .inner .main_menu .item .item_name{
- 
+    Padding: 5px 20px 5px 20px;
+
+  
+   
+}
+
+
+
+header .inner .main_menu .item .item_name:hover i {
+    transition: 0.4s;
+    transform: rotate(180deg);
+
   
    
 }
 
 header .inner .main_menu .item .item_contents{
-   
+    position: fixed;
+    width: 100%;
+    left: 0;
+    display: none;
   
 }
 
 
 header .inner .main_menu .item:hover .item_contents{
-   
+    display: block;
 
 }
 
 header .inner .main_menu .item .item_contents .item_contents_menu{
+    background-color:white;
+    height: 800px;
+    width: 100%;
+    left: 0;
+}
+
+
+
+ /* 엘리스 */
+
+
+header .main_menu .item .item_contents_menu {
+  
+}
+
+header .main_menu .item .item_contents_menu .inner {
+
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+header .main_menu .item .item_contents_menu .inner>li {
+  width: 320px;
+  padding: 15px;
+  padding-left: 25px;
+  margin: 0 20px 20px 20px;
+
+
+}
+
+header .main_menu .item .item_contents_menu .inner>li>a {
+  display: block;
+  text-decoration: none;
+  color: rgb(108, 108, 108);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 15px;
+
+
+}
+
+
+header .main_menu .item .item_contents_menu .inner>li>ul {
+    
+
+}
+
+header .main_menu .item .item_contents_menu .inner>li>ul>li {
+  font-size: 14px;
+  color: #999;
+  padding-bottom:5px ;
+  margin-right: 20px;
+
+
+}
+
+
+
+header .main_menu .item .item_contents_menu .inner>li>ul>li>a {
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(31, 31, 31);
+    padding-bottom:5px ;
+  
+  }
+
+header .main_menu .item .item_contents_menu .inner>li>ul>li:hover {
+
 
 }
 
@@ -62,59 +197,51 @@ header .inner .main_menu .item .item_contents .item_contents_menu{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-header .inner .hearder__btn {
+header .inner .hearder__btn{
+    position: absolute;
     display: flex;
-    position: absolute; 
-    right: 0;
-    height: 30px;
-    top: 0px;
-    bottom: 0px;
-    margin: auto;}
+    top: 25px;
+    left: 1050px;
+}
 
 
-header .inner .hearder__btn__login{
-    padding: 8px;
-    margin-right: 15px;
-    display: flex; 
-    
-    }
-    
-header .inner .header__btn__register{
+header .inner .hearder__btn .hearder__btn__login{
+    margin-right: 25px;
+}
 
-    margin: auto;
-    padding: 10px;
-    margin-right: 12px;
-    box-sizing: border-box;
-    border-radius: 3px;
+header .inner .hearder__btn .hearder__btn__login:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+header .inner .hearder__btn .header__btn__register{
+    background-color: rgb(73, 73, 73);
+    border-radius: 6px;
+    cursor: pointer;
     color: white;
-    background-color: gray;
-    opacity: 50%;
-    display: flex; 
-    
-    }
+    padding: 5px;
 
-
-header .inner .header__btn__register:hover{
-    background-color: black;
-    opacity: 80%;
-    padding: 10px;
-    box-sizing: border-box;
-    border-radius: 3px;
-    
 
 }
+
+
+
+header .inner .hearder__btn .header__btn__register:hover{
+    background-color: rgb(173, 173, 173);
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    padding: 5px;
+
+
+}
+
+
+
+
+
+
+
+
+
