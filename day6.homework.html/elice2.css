@@ -125,6 +125,7 @@ header .inner .main_menu .item .item_contents .item_contents_menu{
     height: 800px;
     width: 100%;
     left: 0;
+
 }
 
 
@@ -163,6 +164,13 @@ header .main_menu .item .item_contents_menu .inner>li>a {
 
 }
 
+header .main_menu .item .item_contents_menu .inner>li>a>i {
+    font-size: 15px;
+
+  
+  
+  }
+
 
 header .main_menu .item .item_contents_menu .inner>li>ul {
     
@@ -173,7 +181,7 @@ header .main_menu .item .item_contents_menu .inner>li>ul>li {
   font-size: 14px;
   color: #999;
   padding-bottom:5px ;
-  margin-right: 20px;
+
 
 
 }
@@ -184,7 +192,7 @@ header .main_menu .item .item_contents_menu .inner>li>ul>li>a {
     text-decoration: none;
     font-size: 14px;
     color: rgb(31, 31, 31);
-    padding-bottom:5px ;
+
   
   }
 
