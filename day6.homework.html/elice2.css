@@ -182,7 +182,12 @@ header .main_menu .item .item_contents_menu .inner>li>ul>li {
   color: #999;
   padding-bottom:5px ;
 
+}
 
+
+header .main_menu .item .item_contents_menu .inner>li>ul>li>li {
+  padding: 20px;
+  margin: 20px;
 
 }
 
@@ -229,6 +234,7 @@ header .inner .hearder__btn .header__btn__register{
     cursor: pointer;
     color: white;
     padding: 5px;
+    margin-top: -5px;
 
 
 }
