@@ -7,7 +7,7 @@ body {
     /* 배수값으로 하는게 정신건강에 좋다 */
     line-height: 1.4;
     font-family: "Nanum Gothic", sans-serif;
-    height: 3000px;
+    height: 1200px;
   }
 
 .inner{
@@ -18,6 +18,63 @@ body {
 
 
 }
+
+.strong{
+  font-weight: 900;
+  font-size: 18px;
+}
+
+
+.btn {
+  display: inline-block;
+  padding: 8px 20px;
+  box-sizing: border-box;
+  border: 2px solid currentColor;
+  border-radius: 5px;
+
+}
+
+
+
+.btn--reverse {
+  background-color: #00704a;
+  border-color: #00704a;
+  color: white;
+
+
+}
+
+.btn--reverse:hover {
+  text-decoration: underline;
+
+}
+
+a{  text-decoration: none;}
+
+
+.btn--white{
+  border-color: white;
+  color: white;
+}
+
+
+.btn--white:hover{
+  text-decoration: underline;
+}
+  
+.btn--light_green{
+  border-color: #00704a;
+  color: #00704a;
+  transition:0.4s;
+}
+
+.btn--light_green:hover{
+  color: white;
+  background-color: #00704a;
+  text-decoration: underline;
+
+}
+
   
   /* HEADER */
   header {
@@ -303,13 +360,7 @@ header .badges .badge>img{} */
   position: block;
   display: flex;
   border: 2px solid #1c3831;
-  border-radius: 5px;
-  padding: 7px 25px;
-  text-decoration: none;
-  width: 80px;
-  height: 20px;
-  color: #100f0e;
-  margin-top: 15px;
+
   text-align: center;
   
   
@@ -486,4 +537,645 @@ header .badges .badge>img{} */
 .notice .notice_line .inner .inner__right a span{
   font-size: 36px;
   vertical-align: bottom;
+}
+
+
+
+/* REWARDS */
+
+.rewards{
+  background-color: #1e3932;
+  width: 100%;
+  height: 210px;
+}
+
+.rewards .inner{
+  padding: 30px 0 40px 0;
+  display: flex;
+  gap: 20px;
+
+}
+
+.rewards .inner>a{}
+
+.rewards .inner>a>img{
+  width: 175px;
+  display: block;
+
+}
+
+.rewards .inner .rewards__items{
+  flex-grow: 1;
+}
+
+.rewards .inner .rewards__items .rewards__items__register{
+  position: relative;
+  padding-bottom: 0 0 20px 0;
+  box-shadow: 0 0.5px #c8c8c8;
+}
+
+.rewards .inner .rewards__items .rewards__items__register p{
+  display: block;
+  font-size: 15px;
+  color: white;
+}
+
+.rewards .inner .rewards__items .rewards__items__register .subject{
+  font-size: 25px;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.rewards .inner .rewards__items .rewards__items__register .buttons{
+  position: absolute;
+  right: 0;
+  bottom: 12px;
+
+}
+
+.rewards .inner .rewards__items .rewards__items__card{
+  position: relative;
+  padding-top: 0px;
+  top: 25px;
+}
+
+.rewards .inner .rewards__items .rewards__items__card p{
+  font-size: 15px;
+  color: white;
+  
+}
+
+.rewards .inner .rewards__items .rewards__items__card .buttons{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+}
+
+/* PERU */
+
+.peru{
+  position: relative;
+  overflow: hidden;
+  background-image: url("/star-bucks/images/peru_bg.jpg");
+  height: 570px;
+
+}
+
+.peru::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  background-image: url("/star-bucks/images/peru_bg_left.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width:450px;
+  height: 450px;
+
+}
+
+.peru::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: block;
+  background-image: url("/star-bucks/images/peru_bg_right.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width:400px;
+  height: 400px;
+
+}
+
+.peru .inner{
+  height: 500px;
+}
+
+.peru .inner .img_product{
+  display: block;
+  position: absolute;
+  width: 310px;
+  top: 90px;
+  left: 300px;
+  transform: translate(-500px, 0);
+  transition: 2s;
+  opacity: 0;
+}
+
+.peru .inner:active .img_product{
+  transform: translate(0px, 0);
+  opacity: 1;
+}
+
+.peru .inner .peru__contents{
+  position: absolute;
+  width: 310px;
+  top: 160px;
+  right: 200px;
+  transform: translate(500px, 0);
+  transition: 2s;
+  opacity: 0;
+
+
+
+}
+
+.peru .inner:active .peru__contents{
+  transform: translate(0px, 0);
+  opacity: 1;
+}
+
+.peru .inner .peru__contents>img{
+  width: 420px;
+}
+
+.peru .inner .peru__contents .btn{
+ display: block;
+ width: 130px;
+ margin-top: 40px;
+}
+
+/* INDONESIA */
+
+.indonesia{
+  background-image: url("/star-bucks/images/indonesia_bg.jpg");
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  right: 0;
+
+}
+
+.indonesia::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: block;
+  background-image: url("/star-bucks/images/indonesia_bg_right.png");
+  width: 373px ; 
+  height:277px ;
+
+}
+
+
+.indonesia::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: block;
+  background-image: url("/star-bucks/images/indonesia_bg_left.png");
+  width: 373px ; 
+  height:277px ; 
+  Left: -100px;
+
+  
+
+}
+
+.indonesia .inner{
+  
+}
+
+.indonesia .inner .indonesia__title{
+  position: absolute;
+  Width: 563px;
+  top: 100px;
+
+
+
+}
+
+.indonesia .inner .indonesia__img{
+  position: absolute;
+  left: -350px;
+}
+
+.indonesia .inner .btn--gold{
+  position:absolute;
+  color: rgb(92, 75, 0);
+  top: 265px;
+  left: 300px;
+
+}
+
+.indonesia .inner .btn.btn--gold:hover{
+  text-decoration: underline;
+  background-color: rgb(92, 75, 0);
+  border-color: rgb(92, 75, 0);
+  color: white;
+  transform: 0.4s;
+
+}
+
+
+
+/* FAVORITE */
+
+.favorite{
+  background-image: url("/star-bucks/images/fav_bg.jpg");
+  height: 800px;
+  position: relative;
+  overflow: hidden;
+  right: 0;
+  background-attachment: fixed;
+  
+
+}
+
+.favorite .inner{
+  height: 800px;
+}
+
+.favorite .inner .img{
+  
+}
+
+.favorite .inner .favorite__title_1{
+  position: absolute;
+  left: 90px;
+  top: 150px;
+  transform: translate(-600px, 0);
+  transition: 2s;
+}
+
+.favorite .inner .favorite__title_2{
+  position: absolute;
+  left: -20px;
+  top: 400px;
+  transform: translate(-600px, 0);
+  transition: 2.5s;
+
+}
+
+.favorite .inner:hover .favorite__title_1,
+.favorite .inner:hover .favorite__title_2 {
+  transform: translate(0px, 0);
+  opacity: 1;
+}
+
+.favorite .inner .favorite__img{
+  position: absolute;
+  display: block;
+  left: 500px;
+  top: 160px;
+}
+
+.favorite .inner a{
+  position: absolute;
+  display: block;
+  left: 210px;
+  top: 600px;
+  opacity: 0;
+}
+
+.favorite .inner:hover a{
+  transition: 0.5s;
+  opacity: 1;
+}
+
+
+.favorite .inner a:hover{
+  text-decoration: underline;
+  background-color: white;
+  border-color: white;
+  color: black;
+ 
+}
+
+
+/* MAGAZINE */
+
+.magazine{
+  background-image: url("/star-bucks/images/magazine_bg.png");
+  height: 320px;
+  position: relative;
+  right: 0px;
+  top: 50px;
+  background-repeat: no-repeat;
+  background-size: 1400px;
+  display: block;
+  background-size: cover;
+
+}
+
+.magazine .inner{}
+
+.magazine .inner img{
+}
+
+.magazine .inner .magazine__title{
+  position: absolute;
+  display: block;
+  right: 480px;
+  top: 70px;
+}
+
+.magazine .inner .magazine__img{
+  position: absolute;
+  display: block;
+  left: 680px;
+  top: -50px;
+  width: 330px;
+
+
+}
+
+.magazine .inner a{
+  position: absolute;
+  display: block;
+  right: 650px;
+  top: 200px;
+  border: 2px solid #000;
+  color: #000;
+
+}
+
+.magazine .inner a:hover{
+  background-color: #000;
+  border: 2px solid #000;
+  color: #fff;
+  text-decoration: underline;
+
+}
+
+/* FIND STORE */
+
+.store{
+  background-image: url("/star-bucks/images/store_bg.jpg");
+  height: 400px;
+  position: relative;
+ left: 0;
+  top: 50px;
+  background-repeat: no-repeat;
+  background-size: 1400px;
+  display: block;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.store .inner{
+  height: 1200px;
+}
+
+.store .inner img{
+  
+  
+}
+
+.store .inner .store__title_1{
+  position: absolute;
+  left: 650px;
+  top: 90px;
+  transform: translate(600px, 0);
+  transition: 2.5s;
+  opacity: 0;
+}
+
+.store .inner .store__title_2{
+  position: absolute;
+  left: 650px;
+  top: 160px;
+  transform: translate(600px, 0);
+  transition: 2s;
+  opacity: 0;
+}
+
+
+
+.store .inner:hover .store__title_1{
+  transform: translate(0, 0);
+  opacity: 1;
+
+}
+
+.store .inner:hover .store__title_2{
+  transform: translate(0, 0);
+  opacity: 1;
+
+}
+
+.store .inner .store__img_3{
+  position: absolute;
+  left: 450px;
+  bottom: 20px;
+}
+
+.store .inner .store__img_4{
+  position: absolute;
+  display: block;
+  top: 300px;
+  left: 950px;
+}
+
+.store .inner .store__img_2{
+  position: absolute;
+  display: block;
+  top: 0px;
+  left: 70px;
+  opacity: 0;
+  transition: 1.5s;
+}
+
+.store .inner:hover .store__img_2{
+  opacity: 1;
+  
+}
+
+.store .inner .store__img_1{
+  position: absolute;
+  display: block;
+  top: 140px;
+  right: 550px;
+  opacity: 0;
+  transition: 2.5s;
+}
+
+.store .inner:hover .store__img_1{
+  opacity: 1;
+}
+
+.store .inner a{
+  transform: translate(600px, 0);
+  transition: 2.5s;
+  opacity: 0;
+  position: absolute;
+  display: block;
+  right: 325px;
+  top: 250px;
+  border: 2px solid #000;
+  color: #000;
+}
+
+
+.store .inner:hover a{
+  transform: translate(0, 0);
+  opacity: 1;
+
+}
+
+.store .inner a:active{
+  background-color: #000;
+  border: 2px solid #000;
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* footer_background */
+
+.footer_background{
+  position:relative;
+  background-color: rgb(49, 49, 49);
+  width: 1600px;
+  height: 650px;
+  top: 50px;
+ 
+
+}
+
+ul{list-style: none;}
+
+.footer_background li{
+ color:white;
+ font-size: 12px;
+ line-height: 20px;
+ cursor: pointer;}
+
+ .footer_background .company{
+  position:absolute;
+  height: 50px;
+  top: 40px;
+  left: 180px;
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
+}
+
+.footer_background .company a{
+  
+  font-size: 15px;
+  color: white;
+}
+
+
+
+
+.footer_background .CORPORATESALES{
+  position:absolute;
+  height: 50px;
+  top: 40px;
+  left: 400px;
+}
+
+.footer_background .CORPORATESALES a{
+  font-size: 15px;
+  color: white;
+}
+
+.footer_background .PARTNERSHIP{
+  position:absolute;
+  height: 50px;
+  top: 40px;
+  left: 620px;
+}
+
+.footer_background .PARTNERSHIP a{
+  font-size: 15px;
+  color: white;
+}
+
+
+.footer_background .ONLINECOMMUNITY{
+  position:absolute;
+  height: 50px;
+  top: 40px;
+  left: 830px;
+}
+
+.footer_background .ONLINECOMMUNITY a{
+  font-size: 15px;
+  color: white;
+}
+
+
+.footer_background .RECRUIT{
+  position:absolute;
+  height: 50px;
+  top: 40px;
+  left: 1080px;
+}
+
+.footer_background .RECRUIT a{
+  font-size: 15px;
+  color: white;
+}
+
+.footer_background .black{
+  position: relative;
+  background-color: rgb(41, 39, 39);
+  height: 100px;
+  top: 280px;
+  align-items: center;
+  line-height: 15px;
+  margin-left: 0 auto;
+  }
+
+.black > div{
+      float: left;
+      position: absolute;
+      padding-left: 200px;
+      padding-top: 25px;
+      size: 15px;
+
+  }
+
+
+
+.footer_background .company_1 li{
+  position: relative;
+  display: inline-block;
+  padding-left: 15px;
+  text-align: center;
+  cursor: pointer;
+  top: 300px;
+  left: 200px;
+}
+
+
+.company_1 li:nth-child(1){
+  color: green;
+  font-weight:bolder;
+  
+}
+
+.border > div{
+  position: relative;
+  border: 2px solid;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  font-size: 13px;
+  width: 115px;
+  height: 30px;
+  line-height: 30px;
+  cursor: pointer;
+  left: 580px;
+  top: 320px;
+  text-align: center;
+    
+}
+
+.border > div:hover{
+  text-decoration: underline;
+
+}
+
+.footer_background .footer__right{
+  position: absolute;
+  top: 50px;
+  right: 250px;
 }
