@@ -185,11 +185,18 @@ header .main_menu .item .item_contents_menu .inner>li>ul>li {
 }
 
 
+header .main_menu .item .item_contents_menu .inner>li>ul>li:hover {
+  background-color: rgb(231, 231, 231);
+  opacity: 0.2;
+
+}
+
+/* 
 header .main_menu .item .item_contents_menu .inner>li>ul>li>li {
   padding: 20px;
   margin: 20px;
 
-}
+} */
 
 
 
